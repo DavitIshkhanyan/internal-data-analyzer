@@ -8,6 +8,15 @@ Small Streamlit tool for business users to upload a CSV or Excel file, inspect t
 - Streamlit
 - Pandas
 
+## Project structure
+
+- `app.py` — Streamlit entry point
+- `internal_data_analyzer/data_io.py` — file reading and column detection
+- `internal_data_analyzer/filters.py` — filtering and sorting
+- `internal_data_analyzer/analytics.py` — summary stats, grouping, insights, time trend
+- `internal_data_analyzer/export.py` — CSV and report export
+- `internal_data_analyzer/ui.py` — page layout
+
 ## What is implemented
 
 - File upload for CSV and Excel
@@ -41,4 +50,3 @@ streamlit run app.py
 - Support PDF report export
 - Add persistent saved views and reusable filter presets
 - Add better file validation and schema inference
-
